@@ -1,5 +1,10 @@
 <?php
 
+/*
+	Hery Kurniawan
+	202008051308384823
+*/
+
 	$arrnumber 	= [160, 3, 1719, 19, 11, 13, -21];
 	$arrcolor 	= ['red', 'blue', 'yellow', 'black', 'grey'];
 	$strcolor 	= 'blue';
