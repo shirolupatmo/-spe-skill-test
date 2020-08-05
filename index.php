@@ -1,9 +1,18 @@
 <?php
 
-	$arrnumber = [160, 3, 1719, 19, 11, 13, -21];
+	$arrnumber 	= [160, 3, 1719, 19, 11, 13, -21];
+	$arrcolor 	= ['red', 'blue', 'yellow', 'black', 'grey'];
+	$strcolor 	= 'blue';
+
 
 	narcissistic(111);
+	echo '<br><br>';
+
 	parityoutlier($arrnumber);
+	echo '<br><br>';
+
+	findNeedle($arrcolor, $strcolor);
+
 
 
 	function narcissistic($numb){
@@ -29,8 +38,6 @@
 	}
 
 	function parityoutlier($arr){
-		echo '<br> ----- <br>';
-
 		$oddnumber 	= 0;
 		$ganjil = '';
 		$evennumber = 0;
@@ -55,6 +62,10 @@
 		}else{
 			echo "all odd integer, no outlier";
 		}
+	}
+
+	function findNeedle($arr, $str){
+		echo array_search($str, $arr);
 	}
 
 ?>
