@@ -1,6 +1,6 @@
 <?php
 
-	$arrnumber = [160, 3, 1719, 19, 11, 130, -21];
+	$arrnumber = [160, 3, 1719, 19, 11, 13, -21];
 
 	narcissistic(111);
 	parityoutlier($arrnumber);
@@ -53,7 +53,7 @@
 		if($oddnumber == 1){
 			echo $ganjil." (the only odd number)";
 		}elseif($evennumber == 1){
-			echo $ganjil." (the only even number)";
+			echo $genap." (the only even number)";
 		}else{
 			echo "all odd integer, no outlier";
 		}
