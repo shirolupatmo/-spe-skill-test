@@ -48,8 +48,6 @@
 			}
 		}
 
-		//echo "ganjil = ".$oddnumber." - genap = ".$evennumber;
-
 		if($oddnumber == 1){
 			echo $ganjil." (the only odd number)";
 		}elseif($evennumber == 1){
