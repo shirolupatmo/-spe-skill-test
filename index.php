@@ -5,9 +5,11 @@
 	202008051308384823
 */
 
-	$arrnumber 	= [160, 3, 1719, 19, 11, 13, -21];
-	$arrcolor 	= ['red', 'blue', 'yellow', 'black', 'grey'];
-	$strcolor 	= 'blue';
+	$arrnumber 		= [160, 3, 1719, 19, 11, 13, -21];
+	$arrcolor 		= ['red', 'blue', 'yellow', 'black', 'grey'];
+	$strcolor 		= 'blue';
+	$arrblueOcean 	= [1,5,5,5,5,3];
+	$strblueOcean 	= [5];
 
 
 	narcissistic(111);
@@ -17,6 +19,9 @@
 	echo '<br><br>';
 
 	findNeedle($arrcolor, $strcolor);
+	echo '<br><br>';
+
+	blueOcean($arrblueOcean, $strblueOcean);
 
 
 
@@ -71,6 +76,23 @@
 
 	function findNeedle($arr, $str){
 		echo array_search($str, $arr);
+	}
+
+	function blueOcean($arr, $str){
+		$hapus 		= '';
+		$arrhasil 	= array();
+
+		foreach($str as $chr){
+			$hapus = $chr;
+		}
+
+		foreach($arr as $chr){
+			if($hapus !== $chr){
+				array_push($arrhasil, $chr);
+			}
+		}
+
+		print_r($arrhasil);
 	}
 
 ?>
