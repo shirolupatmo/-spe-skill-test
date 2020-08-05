@@ -1,6 +1,6 @@
 <?php
 
-	echo narcissistic(153);
+	narcissistic(111);
 
 	function narcissistic($numb){
 		$sumcar = strval($numb);
@@ -18,9 +18,9 @@
 
 
 		if($numb == $a){
-			return 'true';
+			echo 'true';
 		}else{
-			return 'false';
+			echo 'false';
 		}
 	}
 
